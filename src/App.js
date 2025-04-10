@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import Navbar from './Components/Navi/Navbar';
+import Hero from './Components/hriao/Hero';
+import Feature from './Components/features/Feature';
+import About from './Components/about/About';
+import Footer from './Components/footer/Footer';
+import  Login from './Components/Login/Login';
+import Upload from './Components/UploadPage/Upload'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <>
+            <Navbar />
+            <Hero />
+            <Feature />
+            <About />
+            <Footer />
+          </>
+        }
+      />
+      <Route path='/log' element={<Login/>}/>
+      <Route path='/upl' element={<Upload/>}/>
+    </Routes>
+  </BrowserRouter>
   );
 }
 

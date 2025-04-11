@@ -7,7 +7,10 @@ import About from './Components/about/About';
 import Footer from './Components/footer/Footer';
 import  Login from './Components/Login/Login';
 import Upload from './Components/UploadPage/Upload'
+<<<<<<< HEAD
 import Team from './Components/Team/Team';
+=======
+>>>>>>> c6c009a9f7b931cd859092be4efa046e9505e092
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
@@ -27,7 +30,10 @@ function App() {
       />
       <Route path='/log' element={<Login/>}/>
       <Route path='/upl' element={<Upload/>}/>
+<<<<<<< HEAD
       <Route path='/team' element={<Team/>}/>
+=======
+>>>>>>> c6c009a9f7b931cd859092be4efa046e9505e092
     </Routes>
   </BrowserRouter>
   );

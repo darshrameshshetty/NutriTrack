@@ -1,0 +1,38 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+}
+.fspart{
+    display:flex;
+}
+.fspart h1{
+    margin-top: 5px;
+    color: #FF5733;
+}
+.fspart img{
+    height: 40px;
+    margin-top: 25px;
+    margin-left:20px;
+}
+.spart{
+display: flex;
+gap: 70px;
+margin-top: 8px;
+margin-right:20px;
+}
+.hel{
+    all: unset;
+    padding: 10px 20px;
+    background-color: #ff5733;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 13px;
+}
+button{
+    cursor: pointer;
+}
+.login-link:hover{
+    color:#ff5733
+}
